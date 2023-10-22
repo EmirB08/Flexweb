@@ -151,7 +151,8 @@ ul{
     .header p {
         margin: 0px 30px;
     }
-
+ /* I liked how the page looked better without the picture, alternative I would
+ add a different picture, but this looked clean to me */
     .header img {
         display: none;
     }
