@@ -100,7 +100,7 @@ ul{
 .box i{
     margin-right: 10px;
 }
-/* The breakpoints are done with text alignment in mind where the text alignment broke into more lines,so I could minimize layout changes, I think it worked out well. */
+/* The breakpoints are done with text alignment in mind where the text alignment broke into more lines,so I could minimize layout changes, I think it worked out well as I think responsiveness using text size scaling works out the best in terms of inputs required. */
 @media screen and (max-width: 1082px){
     body{
         font-size: 0.85rem;
@@ -152,7 +152,7 @@ ul{
         margin: 0px 30px;
     }
  /* I liked how the page looked better without the picture, alternative I would
- add a different picture, but this looked clean to me */
+ add a different picture, but this looked cleaner to me */
     .header img {
         display: none;
     }
@@ -166,7 +166,7 @@ ul{
         margin: 20px 0;
         max-width: 90%;
     }
-/* just made it fixed for ultra small height screens. */
+/* just made it fixed for small height screens. */
     .nav-bar {
         position: fixed;
         top: 0;
@@ -195,5 +195,26 @@ ul{
 
     .nav-bar a {
         font-size: 14px;
+    }
+}
+
+/* I assume with media query for iPad it was meant all tablets in general but
+but I found out about adding device simulations in Safari while doing this task with Xcode so I decided to test it while doing the task. The above media should scale well for tablets in the general sense as it looked fine, but I added these just to test out some more specific targeting. */
+
+@media all and (min-width: 769px) and (min-height: 1024px) and (orientation:portrait) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: rgb(241, 240, 237); /* Just to make it more obvious */
+    }
+    .nav-bar {
+        background-color: rgb(51, 51, 153);
+    }
+    .header, .box {
+        background-color: rgb(51, 51, 153);
+    }
+    .boxes {
+        margin: auto 0; /* Centering them since the viewport is tall on modern iPads */
     }
 }
