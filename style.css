@@ -100,7 +100,7 @@ ul{
 .box i{
     margin-right: 10px;
 }
-/* The breakpoints are done with text alignment in mind where the text alignment broke into more lines,so I could minimize layout changes, I think it worked out well as I think responsiveness using text size scaling works out the best in terms of inputs required. */
+/* The breakpoints are done with text alignment in mind where the text alignment broke into more lines,so I could minimize layout changes, I think it worked out well as I think responsiveness using text size scaling works out the well when the grid layout is clean in terms of inputs required. */
 @media screen and (max-width: 1082px){
     body{
         font-size: 0.85rem;
@@ -151,8 +151,7 @@ ul{
     .header p {
         margin: 0px 30px;
     }
- /* I liked how the page looked better without the picture, alternative I would
- add a different picture, but this looked cleaner to me */
+ /* I liked how the page looked better without the picture for mible, alternative I would add a different picture, but this looked cleaner to me */
     .header img {
         display: none;
     }
@@ -166,7 +165,7 @@ ul{
         margin: 20px 0;
         max-width: 90%;
     }
-/* just made it fixed for small height screens. */
+/* just made it fixed for smaller screens. */
     .nav-bar {
         position: fixed;
         top: 0;
@@ -199,7 +198,7 @@ ul{
 }
 
 /* I assume with media query for iPad it was meant all tablets in general but
-but I found out about adding device simulations in Safari while doing this task with Xcode so I decided to test it while doing the task. The above media should scale well for tablets in the general sense as it looked fine, but I added these just to test out some more specific targeting. */
+but I found out about adding device simulations in Safari while doing this task with Xcode so I decided to test it while doing the task. The above media should scale well for tablets in the general sense in case they are outside of the iPad media query as it looked fine, but I added these just to test out some more specific targeting. */
 
 @media all and (min-width: 769px) and (min-height: 1024px) and (orientation:portrait) {
     body {
