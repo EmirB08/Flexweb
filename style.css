@@ -100,7 +100,7 @@ ul{
 .box i{
     margin-right: 10px;
 }
-
+/* The breakpoints are done with text alignment in mind where the text alignment broke into more lines,so I could minimize layout changes, I think it worked out well. */
 @media screen and (max-width: 1082px){
     body{
         font-size: 0.85rem;
@@ -166,7 +166,7 @@ ul{
         margin: 20px 0;
         max-width: 90%;
     }
-
+/* just made it fixed for ultra small height screens. */
     .nav-bar {
         position: fixed;
         top: 0;
