@@ -198,7 +198,7 @@ ul{
 }
 
 /* I assume with media query for iPad it was meant all tablets in general but
-but I found out about adding device simulations in Safari while doing this task with Xcode so I decided to test it while doing the task. The above media should scale well for tablets in the general sense in case they are outside of the iPad media query as it looked fine, but I added these just to test out some more specific targeting. */
+but I found out about adding device simulations in Safari while doing this task with Xcode so I decided to test it while doing the task. The above media should scale well for tablets in the general sense in case they are outside of the iPad media query as it looked fine, but I added these just to test out some more specific targeting of tablets using orientation:portrait. */
 
 @media all and (min-width: 769px) and (min-height: 1024px) and (orientation:portrait) {
     body {
